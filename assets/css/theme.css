@@ -1,0 +1,74 @@
+/* ---------- Base ---------- */
+:root {
+  --brand: #0ea5e9;   /* cyan/techy */
+  --brand-dark: #0284c7;
+}
+html, body { height: 100%; }
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.nav-link.active, .nav-link:hover {
+  color: var(--brand) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(14,165,233,.18), transparent 60%),
+              radial-gradient(1200px 600px at 80% 110%, rgba(14,165,233,.22), transparent 60%),
+              linear-gradient(180deg, #ffffff, #eef7fc);
+  padding: 72px 0 64px;
+}
+.hero .lead {
+  color: #334155;
+}
+.hero .btn-brand {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.hero .btn-brand:hover {
+  background: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+}
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 600;
+  color: #64748b;
+  font-size: .78rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(2, 8, 23, .08);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #0b1220;
+  color: #cbd5e1;
+}
+footer a { color: #e2e8f0; text-decoration: none; }
+footer a:hover { color: #fff; }
